@@ -36,12 +36,12 @@ int main(int argc, char *argv[])
         fprintf(stderr, "Utilizare: %s numar\n", argv[0]);
         return 1;
     }
-    char *cp = calloc(strlen(argv[1]) + 1, sizeof(char));
-    if (cp == NULL)
-    {
-        perror(cp);
-        return 2;
-    }
+    // char *cp = calloc(strlen(argv[1]) + 1, sizeof(char));
+    // if (cp == NULL)
+    // {
+    //     perror(cp);
+    //     return 2;
+    // }
     nr = strtol(argv[1], &er, 10);
     if (*er != '\0' || (strcmp(argv[1], "") == 0))
     {
